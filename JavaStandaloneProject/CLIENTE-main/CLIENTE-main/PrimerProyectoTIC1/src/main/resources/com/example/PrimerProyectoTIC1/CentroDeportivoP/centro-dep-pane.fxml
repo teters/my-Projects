@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="445.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.PrimerProyectoTIC1.CentroDeportivoP.CentroDepPaneController">
+    <left>
+        <VBox prefHeight="349.0" prefWidth="747.0" styleClass="rest" stylesheets="@../option.css" BorderPane.alignment="CENTER">
+            <children>
+                <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#crearActividades" prefHeight="107.0" prefWidth="713.0" styleClass="azul-sin-redondear" stylesheets="@../option.css" text="Crear actividad" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="Corbel Bold" size="21.0" />
+                    </font></Button>
+            <Button alignment="CENTER" layoutX="10.0" layoutY="66.0" mnemonicParsing="false" onAction="#empleadosEnCentros" prefHeight="107.0" prefWidth="713.0" styleClass="azul-sin-redondear" stylesheets="@../option.css" text="Check-in de empleados" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="21.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#verTablaReserva" prefHeight="107.0" prefWidth="713.0" styleClass="azul-sin-redondear" stylesheets="@../option.css" text="Ver reservas registradas en el centro" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="21.0" />
+               </font>
+            </Button>
+            <HBox prefHeight="55.0" prefWidth="713.0">
+               <children>
+                  <VBox prefHeight="53.0" prefWidth="463.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#volver" prefHeight="54.0" prefWidth="357.0" styleClass="azul-sin-redondear-borde" stylesheets="@../option.css" text="Volver" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="48.0" prefWidth="465.0">
+                     <children>
+                        <Button fx:id="salirCD" mnemonicParsing="false" onAction="#salir" prefHeight="54.0" prefWidth="357.0" styleClass="azul-sin-redondear-borde" stylesheets="@../option.css" text="Salir" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            </children>
+        </VBox>
+    </left>
+    <top>
+        <AnchorPane prefHeight="100.0" prefWidth="713.0" styleClass="top" stylesheets="@../option.css" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="246.0" layoutY="20.0" prefHeight="60.0" prefWidth="221.0" text="Fitness App" textFill="WHITE">
+                    <font>
+                        <Font name="Corbel Bold Italic" size="44.0" />
+                    </font>
+                </Label>
+            <ImageView fitHeight="93.0" fitWidth="103.0" layoutX="523.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../imagenes/logo-fit.png" />
+               </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+    </top>
+</BorderPane>

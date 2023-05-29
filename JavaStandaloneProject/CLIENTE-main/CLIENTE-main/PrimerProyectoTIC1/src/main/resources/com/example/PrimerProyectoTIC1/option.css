@@ -1,0 +1,66 @@
+.azul{
+  -fx-background-color: #1479b0;
+}
+
+.azul-sin-redondear{
+    -fx-background-radius: 0;
+    -fx-background-color: #1479b0;
+}
+
+.azul-sin-redondear-borde{
+    -fx-background-radius: 0;
+    -fx-border-color: #111111;
+    -fx-background-color: #66a5de;
+}
+
+
+.top{
+    -fx-background-color: #054c75;
+}
+
+.rest{
+    -fx-background-color: #ffffff;
+}
+
+.boxShape{
+    -fx-background-radius: 5;
+}
+
+.btnColor{
+    -fx-background-color: #054c75;
+}
+
+.shadow{
+    -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0.1), 10.0, 0.0, 0.0, 10.0);
+}
+
+.color-fondo{
+    -fx-background-color: whitesmoke;
+}
+
+
+.round-shape{
+    -fx-background-radius: 50;
+}
+
+.button:hover{
+    -fx-background-color: #116591;
+    -fx-cursor: hand;
+}
+
+.botones-centro-dep{
+    -fx-background-color: #66a5de;
+    -fx-background-radius: 30;
+}
+
+.black{
+    -fx-background-color: #000000;
+}
+
+.transparent{
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+}
+

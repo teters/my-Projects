@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0" prefWidth="679.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.PrimerProyectoTIC1.CentroDeportivoP.CrearActividadController">
+    <top>
+        <AnchorPane prefHeight="101.0" prefWidth="600.0" styleClass="top" stylesheets="@../option.css" BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="CENTER" layoutX="224.0" layoutY="18.0" prefHeight="79.0" prefWidth="196.0" text="Fitness App" textFill="WHITE">
+                    <font>
+                        <Font name="Corbel Bold Italic" size="36.0" />
+                    </font>
+                </Label>
+            <ImageView fitHeight="127.0" fitWidth="200.0" layoutX="402.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="89.0" fitWidth="98.0" layoutX="430.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../imagenes/logo-fit.png" />
+               </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+    </top>
+   <right>
+        <AnchorPane prefHeight="374.0" prefWidth="684.0" styleClass="azul" stylesheets="@../option.css" BorderPane.alignment="CENTER">
+            <children>
+                <TextField fx:id="nombreActividad" layoutX="130.0" layoutY="19.0" promptText="Nombre" styleClass="boxShape" stylesheets="@../option.css" />
+                <TextField fx:id="tipoActividad" layoutX="131.0" layoutY="69.0" promptText="Tipo actividad" styleClass="boxShape" stylesheets="@../option.css" />
+                <TextField fx:id="precioActividad" layoutX="404.0" layoutY="19.0" promptText="Precio" />
+                <Label layoutX="40.0" layoutY="20.0" prefHeight="22.0" prefWidth="69.0" text="Nombre:" textFill="WHITE">
+                    <font>
+                        <Font name="Corbel Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="10.0" layoutY="70.0" text="Tipo actividad:" textFill="WHITE">
+                    <font>
+                        <Font name="Corbel Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+                <Button layoutX="130.0" layoutY="301.0" mnemonicParsing="false" onAction="#altaActividad" prefHeight="27.0" prefWidth="97.0" styleClass="botones-centro-dep" stylesheets="@../option.css" text="Agregar" textFill="WHITE">
+                    <font>
+                        <Font name="Corbel Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Button fx:id="volverEmp" layoutX="306.0" layoutY="301.0" mnemonicParsing="false" onAction="#volverEmp" prefHeight="27.0" prefWidth="66.0" styleClass="botones-centro-dep" stylesheets="@../option.css" text="Volver" textFill="WHITE">
+                    <font>
+                        <Font name="Corbel Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Button fx:id="salirBEmp" layoutX="445.0" layoutY="301.0" mnemonicParsing="false" onAction="#salirEmp" prefHeight="27.0" prefWidth="54.0" styleClass="botones-centro-dep" stylesheets="@../option.css" text="Salir" textFill="WHITE">
+                    <font>
+                        <Font name="Corbel Bold" size="14.0" />
+                    </font>
+                </Button>
+            <Label layoutX="326.0" layoutY="20.0" prefHeight="22.0" prefWidth="69.0" text="Precio:" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="descripcionActividad" layoutX="404.0" layoutY="116.0" prefHeight="54.0" prefWidth="192.0" />
+            <Label layoutX="305.0" layoutY="118.0" prefHeight="22.0" prefWidth="97.0" text="Descripcion:" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="67.0" layoutY="118.0" text="Dia:" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="horariosActividad" layoutX="131.0" layoutY="167.0" promptText="Horarios" />
+            <Label layoutX="67.0" layoutY="168.0" text="Hora:" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cuposActividad" layoutX="404.0" layoutY="69.0" prefHeight="25.0" prefWidth="147.0" promptText="Cupos" />
+            <Label layoutX="326.0" layoutY="71.0" prefHeight="22.0" prefWidth="69.0" text="Cupos:" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="reserva" alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="326.0" layoutY="190.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="22.0" prefWidth="194.0" text="Requiere Reserva?" textFill="WHITE" AnchorPane.leftAnchor="326.0">
+               <font>
+                  <Font name="Corbel Bold Italic" size="18.0" />
+               </font></CheckBox>
+            <Button layoutX="394.0" layoutY="231.0" mnemonicParsing="false" onAction="#subirFotos" prefHeight="25.0" prefWidth="157.0" styleClass="transparent" stylesheets="@../option.css" text="Elegir imagen" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="fechaActividad" layoutX="131.0" layoutY="117.0" prefWidth="150.0" />
+            </children>
+        </AnchorPane>
+   </right>
+</BorderPane>

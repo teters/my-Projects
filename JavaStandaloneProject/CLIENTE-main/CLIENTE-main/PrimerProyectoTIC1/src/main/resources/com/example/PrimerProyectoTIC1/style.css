@@ -1,0 +1,89 @@
+.button:hover{
+    -fx-background-color: rgba(77, 136, 77, 0.59);
+    -fx-cursor: hand;
+}
+
+.title{
+    -fx-background-color: rgba(132, 236, 134, 0.59);
+    -fx-background-radius: 30;
+}
+
+.verde-titulo{
+    -fx-background-color: rgba(132, 236, 132, 0.59);
+}
+
+.green{
+    -fx-background-color: rgb(33, 77, 34);
+}
+
+.green-oscuro{
+    -fx-background-color: #153115;
+}
+
+.app-buttons{
+    -fx-background-radius: 0 30 30 0;
+}
+
+.bottom-button{
+    -fx-background-color: rgba(132, 236, 134, 0.59);
+    -fx-background-radius: 50;
+}
+
+.image{
+    -fx-border-radius: 30 30 0 0;
+}
+
+.shadow{
+    -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0.1), 10.0, 0.0, 0.0, 10.0);
+}
+
+.color-fondo{
+    -fx-background-color: whitesmoke;
+}
+
+.actividad-fondo{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 30;
+}
+
+.button-shape{
+    -fx-background-radius: 50;
+}
+
+
+.color{
+    -fx-background-color: #ad9742;
+}
+
+.background{
+    -fx-background-color: rgba(132, 236, 134, 0.59);
+}
+
+
+.left-buttons{
+    -fx-background-color: #828282;
+    -fx-background-radius: 30;
+}
+
+.gris{
+    -fx-background-color: #D3D3D3;
+}
+
+.boton-gris{
+    -fx-background-color: #D3D3D3;
+    -fx-background-radius: 50;
+}
+
+.gris-oscuro{
+    -fx-background-color: #828282;
+}
+
+.busqueda{
+     -fx-background-color: #D3d3d3;
+    -fx-background-radius: 30;
+}
+
+.filter-bar{
+    -fx-background-radius: 30;
+}
+

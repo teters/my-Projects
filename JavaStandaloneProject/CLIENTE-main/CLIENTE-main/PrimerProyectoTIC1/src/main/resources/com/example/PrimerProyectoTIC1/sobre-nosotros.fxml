@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="252.0" prefWidth="483.0" styleClass="azul" stylesheets="@option.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.PrimerProyectoTIC1.SobreNosotrosController">
+   <children>
+      <Label alignment="TOP_LEFT" layoutX="11.0" layoutY="101.0" prefHeight="98.0" prefWidth="461.0" text="Somos una empresa desarrolladora de software. Si les gusta nuestro trabajo no dude en contactarnos. " textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="151.0" layoutY="22.0" prefHeight="42.0" prefWidth="182.0" text="Fitness App" textFill="WHITE">
+         <font>
+            <Font name="Corbel Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="83.0" layoutY="188.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="87.0" styleClass="botones-centro-dep" stylesheets="@option.css" text="Volver">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="307.0" layoutY="188.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="87.0" styleClass="botones-centro-dep" stylesheets="@option.css" text="Salir">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
