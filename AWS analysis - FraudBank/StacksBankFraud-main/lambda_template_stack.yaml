@@ -1,0 +1,14 @@
+Resources:
+  MyLambdaFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: my-lambda-function
+      Handler: lambda_function.lambda_handler
+      Role: arn:aws:iam::886867172876:role/LabRole
+      Code:
+        ZipFile: |
+          import boto3
+
+          def lambda_handler(event, context):
+              .
+      Runtime: python3.8
